@@ -1,0 +1,121 @@
+﻿/* General Layout */
+.container {
+    max-width: 1200px; /* Limits width for better readability */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px; /* Adds outer spacing */
+}
+
+.app-logo {
+    width: 10rem;
+    height: 10rem;
+    display: block; /* Ensures it stacks vertically */
+    margin: 0 auto; /* Centers the logo */
+}
+
+.card {
+    background-color: #ABB5B6; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: #FFFFFF;
+    border-radius: 8px; /* Softer corners */
+    padding: 4px; /* Inner spacing */
+}
+
+.custom-card-title {
+    text-align: center;
+    padding: 20px 0; /* Vertical spacing */
+}
+
+.content-section {
+    padding: 15px 0 15px 20px; /* Top, right, bottom, left */
+}
+
+.logo-container {
+    margin-bottom: 15px; /* Space between logo and title */
+}
+
+.custom-card-title h1 {
+    font-size: 2rem; /* Larger title */
+    font-weight: bold;
+    margin: 0 0 10px 0; /* Spacing below title */
+    color: #FFFFFF;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #ABB5B6; /* Lighter color for contrast */
+    margin: 0 0 15px 0; /* Spacing below tagline */
+}
+
+.availability {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.availability i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.privacy-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.content-section {
+    padding: 15px 0; /* Vertical spacing between sections */
+}
+
+.content-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; /* Aligns icon and text */
+}
+
+.content-section h3 i {
+    margin-right: 10px; /* Space between icon and heading */
+}
+
+h4 {
+    font-size: 1rem;
+    color: #ABB5B6;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6; /* Better readability */
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #f0870f; /* Matches your icon color */
+}
+
+a:hover {
+    text-decoration: underline; /* Feedback on hover */
+}
+
+.col-full {
+    flex: 0 0 auto;
+    width: 85%;
+    margin: 0 auto; /* Centers the card */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .app-logo {
+        width: 8rem;
+        height: 8rem;
+    }
+    .col-full {
+        width: 95%;
+    }
+    .custom-card-title h1 {
+        font-size: 1.5rem;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
+}

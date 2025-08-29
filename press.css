@@ -1,0 +1,14 @@
+﻿.press-logo {
+    float: right;
+    width: 15rem;
+    height: 15rem;
+}
+
+
+span {
+    display: block; /* or inline-block */
+}
+
+::deep .h3 {
+    margin-top: 200px;
+}
