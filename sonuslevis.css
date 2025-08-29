@@ -6,8 +6,8 @@
 }
 
 .app-logo {
-    width: 10rem;
-    height: 10rem;
+    width: 0.625rem;
+    height: 0.625rem;
     display: block; /* Ensures it stacks vertically */
     margin: 0 auto; /* Centers the logo */
 }
@@ -106,8 +106,8 @@ a:hover {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .app-logo {
-        width: 8rem;
-        height: 8rem;
+        width: 2rem;
+        height: 2rem;
     }
     .col-full {
         width: 95%;
