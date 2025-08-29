@@ -7,11 +7,17 @@ body {
     background-color: #324151;
     margin: 2%;
     padding: 2%;
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Liberation Mono', 'Courier New', monospace;
 }
 
 h3 {
     margin-bottom: 2.5rem;
 }
+
+footer {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Liberation Mono', 'Courier New', monospace;
+}
+
 
 /*
 light shade  FFFFFF

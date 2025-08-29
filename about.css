@@ -4,3 +4,11 @@
     height: 15rem;
 }
 
+.card-body,
+footer {
+    font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', 'Liberation Mono', 'Courier New', monospace;
+}
+
+footer p {
+    text-align: center;
+}
