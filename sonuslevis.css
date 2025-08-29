@@ -6,16 +6,14 @@
 }
 
 .app-logo {
-    width: 0.625rem;
-    height: 0.625rem;
+    width: 15rem;
+    height: 15rem;
     display: block; /* Ensures it stacks vertically */
     margin: 0 auto; /* Centers the logo */
 }
 
 .card {
-    background-color: #ABB5B6; 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    color: #FFFFFF;
     border-radius: 8px; /* Softer corners */
     padding: 4px; /* Inner spacing */
 }

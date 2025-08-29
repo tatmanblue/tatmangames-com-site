@@ -22,6 +22,14 @@ footer p {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: #f0870f;
+}
+
+a img {
+    margin-right: 5px;
+}
 
 /*
 light shade  FFFFFF

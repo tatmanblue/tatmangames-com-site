@@ -109,11 +109,39 @@
 </footer>
 
 <script>
-document.getElementById('contactForm').addEventListener('submit', function(e) {
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    // Optionally, add client-side validation here
-    document.getElementById('contact-form-section').style.display = 'none';
-    document.getElementById('thank-you-section').style.display = 'block';
+
+    // Gather form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Prepare JSON payload
+    const payload = {
+        Name: name,
+        Email: email,
+        Message: message
+    };
+
+    try {
+        const response = await fetch('http://services.tatmangames.com/svc/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            document.getElementById('contact-form-section').style.display = 'none';
+            document.getElementById('thank-you-section').style.display = 'block';
+        } else {
+            alert('There was a problem submitting your request. Please try again later.');
+        }
+    } catch (error) {
+        alert('Network error. Please try again later.');
+    }
 });
 </script>
 
