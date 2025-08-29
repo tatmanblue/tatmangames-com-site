@@ -1,0 +1,19 @@
+html, body, footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #324151;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+light shade  FFFFFF
+light accent 9EA5A0
+primary      ABB5B6
+dark accent  918679
+dark         324151
+
+*/
