@@ -1,0 +1,7 @@
+# Allow all bots to access everything (default for most blogs)
+User-agent: *
+Disallow:
+
+# Block non-important bots (optional)
+User-agent: BadBot
+Disallow: /
