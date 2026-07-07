@@ -1,143 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J6QN415XY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1J6QN415XY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-1J6QN415XY');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tatman Games | Be Challenged, Be Rewarded</title>
+<meta name="description" content="Tatman Games builds desktop games and apps — Max Capacity, Pitcairn Island, and Sonus Levis. Be challenged, be rewarded.">
+<meta name="keywords" content="desktop gaming, games, computer games, steam games, Max Capacity, Pitcairn Island, Tatman Games, RTS, real time simulation, factory simulation, resource management, markets, Sonus Levis, mp3 player, music app, offline music">
+<meta name="robots" content="index, follow">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<base href="/">
+<link rel="icon" type="image/png" href="favicon.png">
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        gtag('js', new Date());
-
-        gtag('config', 'G-1J6QN415XY');
-    </script>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Games developed by Tatman Games.  Max Capacity.  Pitcairn Island." name="description">
-    <meta content="desktop gaming, games, computer games, steam games, Max Capacity, Pitcairn Island, Tatman Games, RTS, real time simulation, factory simulation, resource management, markets"
-          name="keywords">
-    <meta content="index, follow" name="robots">
-    <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control">
-    <meta content="no-cache" http-equiv="Pragma">
-    <meta content="0" http-equiv="Expires">
-    <base href="/">
-    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link href="css/all.min.css" rel="stylesheet">
-    <link href="app.css" rel="stylesheet">
-    <link href="favicon.png" rel="icon" type="image/png">
-    <title>Tatman Games</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<div  class="page">
-    <main >
-        <h1 >Tatman Games</h1>
-        <h3 >Be challenged, be rewarded</h3>
-        <article  class="content px-4 article">
 
-            <div  class="dropdown-container">
-                <div  class="dropdown">
-                    <button aria-expanded="false"  class="btn btn-secondary dropdown-toggle subtle-btn"
-                            data-bs-toggle="dropdown" id="moreDropdown" type="button">
-                        More
-                    </button>
-                    <ul aria-labelledby="moreDropdown"  class="dropdown-menu">
-                        <li ><a  class="dropdown-item" href="sonuslevis.html">Sonus Levis</a></li>
-                    </ul>
-                </div>
-            </div>
+<!-- Icon sprite (referenced via <use> everywhere an icon or brand mark appears) -->
+<svg style="display:none" aria-hidden="true">
+  <symbol id="logo-mark" viewBox="0 0 100 100">
+    <rect x="8" y="8" width="84" height="84" fill="none" stroke="currentColor" stroke-width="6"/>
+    <text x="50" y="66" text-anchor="middle" font-size="46" font-weight="700" font-family="'Space Grotesk', Arial, sans-serif" fill="currentColor">TG</text>
+  </symbol>
+  <symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9a1 1 0 0 0 1 1H9v-6h6v6h2.5a1 1 0 0 0 1-1v-9"/>
+  </symbol>
+  <symbol id="icon-about" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.5" r="0.9" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1-1.1 1C10.6 21 3 13.4 3 4.1 3 3.5 3.5 3 4.1 3h3.3c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.2 1L6.6 10.8Z"/>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.5 2.5L16 9.5"/>
+  </symbol>
+  <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><circle cx="12" cy="8" r="0.9" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="icon-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3v11"/><path d="m7.5 10 4.5 4.5L16.5 10"/><path d="M4 17.5V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1.5"/>
+  </symbol>
+  <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="currentColor" stroke="none">
+    <path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3.5 21h3V9h-3v12ZM10 9h2.9v1.64h.04c.4-.75 1.4-1.64 2.9-1.64 3.1 0 3.66 2 3.66 4.6V21h-3v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-3V9Z"/>
+  </symbol>
+</svg>
 
-            <div  class="row">
-                <div  class="col-sm-6 card">
-                    <div class="card text-start" id="AR1PHATK12SB0" style="border-color: #FFFFFF;">
-                        <div class="card-body" id="AR1PHATK12SB2">
-                            <h5 class="card-title" id="AR1PHATK12SB6">
-                                <div  class="row"><img  src="images/max-header.png"></div>
-                            </h5>
-                            <p class="card-text" id="AR1PHATK12SB7">
-                            <div  class="row"><h3 ><i  class="fa-solid fa-industry" style="color: #f0870f;"></i>&nbsp;
-                                 Become a Mogul</h3>
-                                <h4 >A titan of industry</h4>
-                                <p >
-                                    Take control of your factory, running man and machinery to make the most money
-                                    possible.
-                                </p></div>
-                            <div  class="row"><h3 ><i class="fa-solid fa-money-bill-1-wave" style="color: #f0870f;"></i>&nbsp;Get
-                                Rich</h3>
-                                <h4 >If you make the right choices, at the right time</h4>
-                                <p >
-                                    Be aware of changing markets, influenced by other tycoons such as yourself. Position
-                                    your factory to make the most of the changing market and make lots of money.
-                                </p></div>
-                            </p></div>
-                        <div class="card-body" id="AR1PHATK12SB3">
-                            <div class="bcallout bcallout-success" id="AR1PHATK12SB8" tabindex="-1">
-                                <div class="bcallout-heading m2"><strong><i class="bi bi-lightbulb me-2"></i>Now
-                                    available...</strong></div>
-                                <div><strong >Now available</strong> on <a
-                                         href="https://store.steampowered.com/app/2579870/Max_Capacity/">Steam</a>.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div  class="col-sm-6 card">
-                    <div class="card text-start" id="AR1PHATK12SB1" style="border-color: #FFFFFF;">
-                        <div class="card-body" id="AR1PHATK12SB4">
-                            <h5 class="card-title" id="AR1PHATK12SB9">
-                                <div  class="row"><img  src="images/pitcairn-header.png"></div>
-                            </h5>
-                            <p class="card-text" id="AR1PHATK12SCA">
-                            <p >
-                                Plunged into the mystery of a midnight parachute drop, Cay lands in an unknown town on
-                                an unknown island, where his journey into the shadowy world of espionage and intrigue
-                                truly begins.
-                            </p>
-                            <p >
-                                Pitcairn Island is an open world story about a young hacker named Cay and the challenges
-                                he faces as he learns of this mysterious place. Experience life like hacking,
-                                cryptography and a thrilling story.
-                            </p></p></div>
-                        <div class="card-body" id="AR1PHATK12SB5">
-                            <div class="bcallout bcallout-info" id="AR1PHATK12SCB" tabindex="-1">
-                                <div class="bcallout-heading m2"><strong><i class="bi bi-info-circle-fill me-2"></i>Early
-                                    Release</strong></div>
-                                <div><h3 >Release Date TBD</h3>
-                                    <p >
-                                        Join Cay, the fearless hacker turned CIA operative, as he dives headfirst into a
-                                        world of secrets, danger, and unexpected twists.
-                                    </p></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-        <footer >
-            <div  class="container">
-                <div  class="row align-items-center">
-                    <div  class="col"><a  href="index.html"><span aria-hidden="true" ><i
-                            class="bi bi-house-door-fill"></i>Home</span></a></div>
-                    <div  class="col"><a  href="about.html"><span aria-hidden="true" ><i
-                            class="bi bi-collection-fill"></i>About</span></a></div>
-                    <div  class="col"><a  href="press.html"><span aria-hidden="true" ><i
-                            class="bi bi-telephone-fill"></i>Press</span></a></div>
-                </div>
-            </div>
-            <p >
-                Copyright (C) 2025 Tatman Games. All rights reserved.
-            </p>
-        </footer>
-    </main>
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg class="preloader__logo" style="color:var(--brand)" aria-hidden="true"><use href="#logo-mark"></use></svg>
 </div>
 
+<!-- Cursor glow -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-<script crossorigin="anonymous"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Skip link -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Header / Nav -->
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a href="#top" class="brand" aria-label="Tatman Games home">
+      <svg class="brand__mark" style="color:var(--brand)" aria-hidden="true"><use href="#logo-mark"></use></svg>
+      <span class="brand__word">TATMAN <em>GAMES</em></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#max-capacity" data-nav>Max Capacity</a></li>
+        <li><a href="#pitcairn" data-nav>Pitcairn Island</a></li>
+        <li><a href="#sonuslevis" data-nav>Sonus Levis</a></li>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#press" data-nav class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+    <div class="hero__glow hero__glow--a" aria-hidden="true"></div>
+    <div class="hero__glow hero__glow--b" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <svg class="hero__logo" style="color:var(--brand)" aria-hidden="true"><use href="#logo-mark"></use></svg>
+      <p class="hero__eyebrow">Desktop Games &middot; Apps</p>
+      <h1 class="hero__title">
+        <span class="line">BE CHALLENGED</span>
+        <span class="line hero__title--accent">BE REWARDED</span>
+      </h1>
+      <p class="hero__subtitle">
+        Tatman Games builds factory sims, open-world stories and no-nonsense
+        apps engineered for players who like a little friction with their fun.
+      </p>
+      <div class="hero__actions">
+        <a href="#max-capacity" class="btn btn--primary">Explore Our Games</a>
+        <a href="#press" class="btn btn--ghost">Get In Touch</a>
+      </div>
+    </div>
+
+    <a href="#max-capacity" class="scroll-cue" aria-label="Scroll to content">
+      <span class="scroll-cue__mouse"><span></span></span>
+    </a>
+  </section>
+
+  <!-- Titles overview -->
+  <section class="pillars" aria-label="Our titles">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Two Games. One App. Zero Compromises.</h2>
+      <p class="section-lede reveal">
+        Every release chases the same idea: give players a system worth
+        mastering, not a checklist to clear.
+      </p>
+
+      <div class="pillar-grid">
+        <article class="pillar-card reveal" data-tilt style="--accent:#f0870f">
+          <h3 class="pillar-card__logo">
+            <img src="images/max_logo.png" alt="" loading="lazy">
+            <span>Max Capacity</span>
+          </h3>
+          <p>Run a factory, master shifting markets, and become a titan of industry. Live now on Steam.</p>
+          <a href="#max-capacity" class="pillar-card__link">Enter the factory <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pillar-card reveal" data-tilt style="--accent:#f2b705">
+          <h3 class="pillar-card__logo pillar-card__logo--text-only">
+            <span>Pitcairn Island</span>
+          </h3>
+          <p>A young hacker, a hidden island, and a story of espionage and intrigue waiting to unfold.</p>
+          <a href="#pitcairn" class="pillar-card__link">Discover the island <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pillar-card reveal" data-tilt style="--accent:#f0870f">
+          <h3 class="pillar-card__logo">
+            <img src="images/sonuslevis.webp" alt="" loading="lazy">
+            <span>Sonus Levis</span>
+          </h3>
+          <p>No ads, no paywalls, just music. A hassle-free MP3 player, launching soon on Google Play.</p>
+          <a href="#sonuslevis" class="pillar-card__link">Press play <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Max Capacity -->
+  <section class="division" id="max-capacity" style="--division-accent:#f0870f">
+    <div class="section-inner division__grid">
+      <div class="division__copy reveal">
+        <div class="division__brand">
+          <img src="images/max_logo.png" alt="Max Capacity logo" class="division__logo">
+          <span class="division__tag">Max Capacity</span>
+        </div>
+        <h2>Become a titan of industry.</h2>
+        <p>
+          Take control of your factory, running men and machinery to make
+          the most money possible. Be aware of shifting markets, influenced
+          by other tycoons just like you — position your factory to make
+          the most of every swing.
+        </p>
+        <ul class="division__features">
+          <li>Build and manage a full production factory</li>
+          <li>React to a dynamic, player-influenced market</li>
+          <li>Resource management and logistics at scale</li>
+        </ul>
+        <div class="callout">
+          <svg class="callout__icon" aria-hidden="true"><use href="#icon-check"></use></svg>
+          <div>
+            <span class="callout__title">Now available</span>
+            <div class="callout__body">Now available on <a href="https://store.steampowered.com/app/2579870/Max_Capacity/" target="_blank" rel="noopener">Steam</a>.</div>
+          </div>
+        </div>
+        <a href="https://store.steampowered.com/app/2579870/Max_Capacity/" target="_blank" rel="noopener" class="btn btn--outline">Play on Steam</a>
+      </div>
+      <div class="division__visual reveal">
+        <div class="media-frame">
+          <div class="media-frame__glow" aria-hidden="true"></div>
+          <img src="images/max-header.png" alt="Max Capacity key art" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pitcairn Island -->
+  <section class="division division--alt" id="pitcairn" style="--division-accent:#f2b705">
+    <div class="section-inner division__grid">
+      <div class="division__visual reveal">
+        <div class="media-frame">
+          <div class="media-frame__glow" aria-hidden="true"></div>
+          <img src="images/pitcairn-header.png" alt="Pitcairn Island key art" loading="lazy">
+        </div>
+      </div>
+      <div class="division__copy reveal">
+        <div class="division__brand">
+          <span class="division__tag">Pitcairn Island</span>
+        </div>
+        <h2>An island holds its secrets.</h2>
+        <p>
+          Plunged into the mystery of a midnight parachute drop, Cay lands
+          in an unknown town on an unknown island, where his journey into
+          the shadowy world of espionage and intrigue truly begins.
+        </p>
+        <p>
+          Pitcairn Island is an open-world story about a young hacker named
+          Cay and the challenges he faces as he learns of this mysterious
+          place. Experience life like hacking, cryptography and a thrilling
+          story.
+        </p>
+        <ul class="division__features">
+          <li>Open-world story built around a hacker protagonist</li>
+          <li>Hacking and cryptography woven into gameplay</li>
+          <li>A tale of espionage, intrigue and unexpected twists</li>
+        </ul>
+        <div class="callout">
+          <svg class="callout__icon" aria-hidden="true"><use href="#icon-info"></use></svg>
+          <div>
+            <span class="callout__title">Early Release &mdash; Release Date TBD</span>
+            <div class="callout__body">Join Cay, the fearless hacker turned CIA operative, as he dives headfirst into a world of secrets, danger, and unexpected twists.</div>
+          </div>
+        </div>
+        <a href="#press" class="btn btn--outline">Get Updates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sonus Levis -->
+  <section class="division" id="sonuslevis" style="--division-accent:#f0870f">
+    <div class="section-inner division__grid">
+      <div class="division__copy reveal">
+        <div class="division__brand">
+          <img src="images/sonuslevis.webp" alt="Sonus Levis logo" class="division__logo">
+          <span class="division__tag">Sonus Levis</span>
+        </div>
+        <h2>No ads. No paywalls. Just music.</h2>
+        <p>
+          Ready for hassle-free music bliss? Meet Sonus Levis &mdash; the MP3
+          player that cuts out the frustration. Just load your songs and hit
+          play. No paywalls, no ads, no internet required, no nonsense. Every
+          feature is yours from the moment you install &mdash; no gimmicks,
+          no locked extras.
+        </p>
+        <ul class="division__features">
+          <li>100% offline &mdash; no internet connection required</li>
+          <li>Every feature unlocked, no paywalls or ads</li>
+          <li>All data stays on your device, never shared</li>
+        </ul>
+        <div class="callout">
+          <svg class="callout__icon" aria-hidden="true"><use href="#icon-download"></use></svg>
+          <div>
+            <span class="callout__title">Coming soon</span>
+            <div class="callout__body">Available soon on the Google Play Store.</div>
+          </div>
+        </div>
+        <p>
+          New here? <a href="https://www.google.com/search?q=how+to+transfer+files+from+my+computer+to+my+android+phone" target="_blank" rel="noopener">Learn how to load your MP3s</a>.
+          Running into an issue? <a href="#press">Contact support</a>.
+        </p>
+        <details class="details-block">
+          <summary>Data &amp; Privacy Policy</summary>
+          <p>
+            Sonus Levis does not transmit any personal information to Tatman
+            Games or any third party, nor is any personal information saved
+            by the app, except as described below. The app creates and
+            stores locally on your device a list of MP3 files found on the
+            device, application settings that you may modify, and playlists
+            that you create. This data is retained solely for the
+            functionality of the app and only on the device the app runs on,
+            and is removed by uninstalling the app. This data is not shared
+            with Tatman Games or any other entity. If you choose to submit a
+            help desk request, you may be asked to provide information
+            about your device (such as model, operating system version, or
+            other relevant details) which may be transmitted, with your
+            permission, to Tatman Games and stored until the issue is
+            resolved. Once the issue is closed, any information collected
+            will be removed and no longer retained by Tatman Games.
+          </p>
+        </details>
+      </div>
+      <div class="division__visual reveal">
+        <div class="media-frame media-frame--app">
+          <div class="media-frame__glow" aria-hidden="true"></div>
+          <img src="images/sonuslevis.webp" alt="Sonus Levis app icon" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="section-inner about__grid">
+      <div class="reveal">
+        <h2 class="section-heading">About Tatman Games</h2>
+        <p class="about__lede">
+          Founded in 2018 to build exciting and dynamic desktop games,
+          Tatman Games has been quietly working under the radar. For the
+          first few years the focus was building engines that simulate
+          life-like economic behavior within closed systems.
+        </p>
+        <p>
+          On October 23, 2023, Tatman Games released the first of those
+          games, Max Capacity. Tatman Games is founded by Matt Raffel
+          (<a href="https://www.linkedin.com/in/mattraffel/" target="_blank" rel="noopener" aria-label="Matt Raffel on LinkedIn"><svg style="width:14px;height:14px;vertical-align:-2px" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>),
+          a 30-year software engineering veteran with most of his experience
+          delivering commercial software products in FinTech.
+        </p>
+        <p>
+          Tatman Games is located in Colorado, USA. The company can be
+          reached at 702.582.8626, or through the <a href="#press">contact form</a> below.
+        </p>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <span class="stat__num">2018</span>
+          <span class="stat__label">Founded</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">3</span>
+          <span class="stat__label">Titles in the Works</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">30+</span>
+          <span class="stat__label">Years Engineering Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">CO</span>
+          <span class="stat__label">Based in Colorado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press / Contact -->
+  <section class="contact" id="press">
+    <div class="section-inner">
+      <h2 class="section-heading reveal">Let&rsquo;s Talk</h2>
+      <p class="section-lede reveal">
+        Press, partnerships, support requests, or just want to say hi
+        &mdash; we&rsquo;d love to hear from you.
+      </p>
+
+      <div class="contact__card reveal">
+        <div class="contact__item">
+          <span class="contact__label">Phone</span>
+          <a href="tel:+17025828626" class="contact__value">702.582.8626</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">Studio</span>
+          <span class="contact__value contact__value--static">Colorado, USA</span>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">Founder</span>
+          <a href="https://www.linkedin.com/in/mattraffel/" target="_blank" rel="noopener" class="contact__value">Matt Raffel</a>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <div id="contact-form-section">
+          <h3>Contact Request</h3>
+          <p class="form-note">
+            Requesting media or press kits for Max Capacity, Pitcairn Island
+            or Sonus Levis? Use the form below.
+          </p>
+          <form id="contactForm">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="my.email@something.com" required>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Requesting media kits for Max Capacity" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Request</button>
+          </form>
+          <p class="form-note">Your information is kept confidential and will not be stored beyond what's needed to respond to you.</p>
+        </div>
+        <div id="thank-you-section" class="thank-you" style="display:none;">
+          <h3>Thank you</h3>
+          <p>Someone will contact you shortly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="section-inner footer__grid">
+    <a href="#top" class="brand brand--footer">
+      <svg class="brand__mark" style="color:var(--brand)" aria-hidden="true"><use href="#logo-mark"></use></svg>
+      <span class="brand__word">TATMAN <em>GAMES</em></span>
+    </a>
+
+    <nav aria-label="Footer">
+      <ul class="footer__links">
+        <li><a href="#top"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" aria-hidden="true"><use href="#icon-home"></use></svg>Home</a></li>
+        <li><a href="#about"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" aria-hidden="true"><use href="#icon-about"></use></svg>About</a></li>
+        <li><a href="#press"><svg style="width:14px;height:14px;vertical-align:-2px;margin-right:4px" aria-hidden="true"><use href="#icon-phone"></use></svg>Press</a></li>
+      </ul>
+    </nav>
+
+    <p class="footer__copy">&copy; <span id="year"></span> Tatman Games. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="js/main.js"></script>
 </body>
-</html> 
+</html>
